@@ -2,10 +2,6 @@
   listperson works!
 </p>
 <ng-container *ngFor="let person of arrPeople">
-  <app-person 
-    name="{{ person.name }}"
-    age="{{ person.age }}"
-    (removePerson)="removePersonByName($event)"
-    (addAgeClick)="addAge($event)"
-    ></app-person>
+  <app-person name="{{ person.name }}" age="{{ person.age }}" (removePerson)="removePersonByName($event)"
+    (addAgeClick)="addAge($event)"></app-person>
 </ng-container>

@@ -11,12 +11,12 @@ export class PersonComponent implements OnInit {
   @Input() age: Number;
   @Output() removePerson = new EventEmitter<String>();
   @Output() addAgeClick = new EventEmitter();
-  
-  removeByClick(){
+
+  removeByClick() {
     this.removePerson.emit(this.name);
   }
 
-  addAge(){
+  addAge() {
     this.addAgeClick.emit(this.name);
   }
 
